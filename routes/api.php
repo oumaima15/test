@@ -25,10 +25,10 @@ Route::post ('/produit/update/{id}', 'ProduitsController@update');
 Route::get ('/produit/show/{id}', 'ProduitsController@read');
 Route::get ('/produits', 'ProduitsController@index');
 //administartion
-Route::post('/administartion/add','AdministartionsController@add');
-Route::get ('/administartion/delete/{id}', 'AdministartionsController@destroy');
+Route::post('/administration/add','AdministrationsController@add');
+Route::get ('/administration/delete/{id}', 'AdministrationsController@destroy');
 Route::post ('/administration/update/{id}', 'AdministrationsController@update');
-Route::get ('/administartion/show/{id}', 'AdministrationsController@read');
+Route::get ('/administration/show/{id}', 'AdministrationsController@read');
 Route::get ('/administrations', 'AdministrationsController@index');
 //*categorie
 Route::post ('/categorie/add', 'CategoriesController@add');
@@ -54,12 +54,12 @@ Route::get ('/user/delete/{id}', 'UsersController@destroy');
 Route::post ('/user/update/{id}', 'UsersController@update');
 Route::get ('/user/show/{id}', 'UsersController@read');
 Route::get ('/users', 'UsersController@index');
-//parrainage
+//parrainnage
 Route::post('/parrainnage/add','ParrainnagesController@add');
-Route::get ('/parrainnage/delete/{id}', 'ParrainngesController@destroy');
+Route::get ('/parrainnage/delete/{id}', 'ParrainnagesController@destroy');
 Route::post ('/parrainnage/update/{id}', 'ParrainnagesController@update');
 Route::get ('/parrainnage/show/{id}', 'ParrainnagesController@read');
-Route::get ('/parrainages', 'ParrainnagesController@index');
+Route::get ('/parrainnages', 'ParrainnagesController@index');
 //*utilisateur
 Route::post ('/utilisateur/add', 'UtilisateursController@add');
 Route::get ('/utilisateur/delete/{id}', 'UtilisateursController@destroy');
