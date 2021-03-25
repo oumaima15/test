@@ -37,5 +37,3 @@ Route::get ('/services', 'PagesController@services');
 
 
 
-
-
