@@ -12,5 +12,8 @@ class Administration extends Model
     public function categories(){
         return $this->hasMany("App\Categorie","id_a","id");
     }
+    public function user(){
+        return $this->belongsTo("App\User","id_us","id");
+    }
     //
 }

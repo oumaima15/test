@@ -16,7 +16,7 @@ class CreateTableComissions extends Migration
         Schema::create('comissions', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('id_ach');
-            $table->bigInteger('id_u');
+            $table->bigInteger('id_ut');
             $table->string('type');
             $table->timestamps();
         });

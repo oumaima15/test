@@ -17,6 +17,7 @@ class CreateTableAdministrations extends Migration
             $table->id();
             $table->integer('quantité');
             $table->string('type');
+            $table->integer('id_us');
             $table->timestamps();
         });
     }

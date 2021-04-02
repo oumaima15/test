@@ -17,6 +17,7 @@ class CreateTableParrainnages extends Migration
             $table->id();
             $table->bigInteger('id_pere');
             $table->bigInteger('id_parrai');
+            $table->bigInteger('id_ut');
 
             $table->timestamps();
         });

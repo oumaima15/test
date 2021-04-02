@@ -20,6 +20,7 @@ class CreateTableUtilisateurs extends Migration
             $table->integer('num_tel');
             $table->string('adresse');
             $table->string('lien_parrainnage');
+            $table->integer('id_us');
             $table->timestamps();
         });
     }
