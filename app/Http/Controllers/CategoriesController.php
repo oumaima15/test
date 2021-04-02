@@ -34,7 +34,8 @@ class CategoriesController extends Controller
         return response()->json(["message"=>"categorie modifier"],200);
   }
   public function read($id){
-      $categorie= Categorie::find($id);
+      $categorie=Categorie::find($id);
+      // $categorie = Categorie::with('produits')->where('id',$id)->get();
       return response()->json($categorie,200);
 
     

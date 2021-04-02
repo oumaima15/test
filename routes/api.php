@@ -24,12 +24,7 @@ Route::get ('/produit/delete/{id}', 'ProduitsController@destroy');
 Route::post ('/produit/update/{id}', 'ProduitsController@update');
 Route::get ('/produit/show/{id}', 'ProduitsController@read');
 Route::get ('/produits', 'ProduitsController@index');
-//administartion
-Route::post('/administration/add','AdministrationsController@add');
-Route::get ('/administration/delete/{id}', 'AdministrationsController@destroy');
-Route::post ('/administration/update/{id}', 'AdministrationsController@update');
-Route::get ('/administration/show/{id}', 'AdministrationsController@read');
-Route::get ('/administrations', 'AdministrationsController@index');
+
 //*categorie
 Route::post ('/categorie/add', 'CategoriesController@add');
 Route::get ('/categorie/delete/{id}', 'CategoriesController@destroy');
