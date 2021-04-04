@@ -14,8 +14,8 @@ class Produit extends Model
         return $this->belongsTo("App\Administration","id_a","id");
         
     }
-    //public function achat(){
-      //  return $this->belongsTo("App\Achat","id_ach","id");
+    public function achats(){
+        return $this->hasMany("App\Achat","id_ach","id");
         
    // }
     //
