@@ -7,16 +7,10 @@ use Illuminate\Http\Request;
 class pagescontroller extends Controller
 {
     public function index(){
-        return ( 'pages.index');
+        return view('welcome');
         
         
     }
 
-    public function about(){
-        return view('pages.about');
-    }
     
-    public function services(){
-        return view('pages.services');
-    }
 }

@@ -15,8 +15,6 @@ class CreateTableAdministrations extends Migration
     {
         Schema::create('administrations', function (Blueprint $table) {
             $table->id();
-            $table->integer('quantité');
-            $table->string('type');
             $table->integer('id_us');
             $table->timestamps();
         });

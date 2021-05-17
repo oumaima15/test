@@ -16,7 +16,7 @@ class Produit extends Model
     }
     public function achats(){
         return $this->hasMany("App\Achat","id_ach","id");
-        
+    } 
    // }
     //
 }
