@@ -16,24 +16,20 @@ use Illuminate\Support\Facades\Route;
 
 
 
-/*
-Route::get('/hello', function ()
+
+Route::get('/', function ()
  {
-    //return view('welcome');
-    return ' <h1> Hello world </h1> ';
+    return view('welcome');
+   
   
      
  });
+ /*
 Route::get('/users/{id}/{name}', function($id, $name)
 {
     return'this is user' .$name. 'with an id of '.$id;
 
 });
 */
-Route::get ('/', 'PagesController@index');
-Route::get ('/about', 'PagesController@about');
-Route::get ('/services', 'PagesController@services');
-
-
 
 
