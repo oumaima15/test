@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTableAdministrations extends Migration
+class CreateTableAdministrateurs extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,8 @@ class CreateTableAdministrations extends Migration
      */
     public function up()
     {
-        Schema::create('administrations', function (Blueprint $table) {
+        Schema::create('administrateurs', function (Blueprint $table) {
             $table->id();
-            $table->integer('quantité');
-            $table->string('type');
             $table->integer('id_us');
             $table->timestamps();
         });
@@ -29,6 +27,6 @@ class CreateTableAdministrations extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_administrations');
+        Schema::dropIfExists('table_administrateurs');
     }
 }

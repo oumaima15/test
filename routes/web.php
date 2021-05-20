@@ -31,5 +31,9 @@ Route::get('/users/{id}/{name}', function($id, $name)
 
 });
 */
+Route::get ('/', 'PagesController@index');
+
+
+
 
 

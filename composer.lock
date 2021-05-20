@@ -1307,6 +1307,13 @@
                 "laravel",
                 "ui"
             ],
+<<<<<<< HEAD
+=======
+            "support": {
+                "issues": "https://github.com/laravel/ui/issues",
+                "source": "https://github.com/laravel/ui/tree/v2.4.0"
+            },
+>>>>>>> 18656be136bef315d7a6115a0ce0571b7217f192
             "time": "2020-09-11T15:31:52+00:00"
         },
         {
@@ -7044,5 +7051,6 @@
     "platform": {
         "php": "^7.2.5"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }
